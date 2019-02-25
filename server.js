@@ -5,10 +5,11 @@ const http = require('http');
 
 const app = express();
 
-app.use('/dist', express.static(path.join(__dirname, '/dist')));
+const DIST_DIRECTORY = path.join(__dirname, '/dist');
+app.use('/', express.static(DIST_DIRECTORY));
 
 app.get('/', (req, res) => res.sendFile(
-  path.join(__dirname, 'index.html'))
+  path.join(DIST_DIRECTORY, 'index.html'))
 );
 
 const server = http.createServer(app)
