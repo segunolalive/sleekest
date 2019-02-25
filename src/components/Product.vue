@@ -41,7 +41,7 @@
             font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
           >from the Noun Project</text>
         </svg>
-        
+
         <svg
           class="unfilled"
           v-if="halfStar"
@@ -80,10 +80,16 @@ export default {
 
 <style scoped>
 figure {
-  width: 25%;
   height: 400px;
+  padding: 5px 10px;
+  margin: 0;
   padding: 30px 40px;
-  margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .figure {
+    width: 25%;
+    margin: 0;
+  }
 }
 
 img {

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex">
+  <section class="flex product-list">
     <product v-for="product in products" :product="product" :key="product.id"></product>
   </section>
 </template>
@@ -13,3 +13,11 @@ export default {
   components: { Product }
 };
 </script>
+
+<style scoped>
+@media screen and (max-width: 800px) {
+  .product-list {
+    flex-direction: column;
+  }
+}
+</style>
