@@ -36,20 +36,7 @@ export default {
   data() {
     return {
       categories: [],
-      products: [
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 },
-        { name: "foo", price: 30 }
-      ]
+      products: []
     };
   },
   mounted() {
@@ -125,7 +112,7 @@ export default {
 
 .explore h4 {
   padding-left: 20px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   color: gray;
