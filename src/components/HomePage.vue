@@ -57,7 +57,7 @@ export default {
       .then(response => (this.categories = response.data))
       .catch(() => {});
     HTTP.get("/products")
-      // .then(response => (this.products = response.data))
+      .then(response => (this.products = response.data))
       .catch(() => {});
   },
   computed: {
